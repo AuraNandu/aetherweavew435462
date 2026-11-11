@@ -1,0 +1,12 @@
+name = "aetherweave-relay"
+main = "src/index.ts"
+compatibility_date = "2025-05-01"
+
+[durable_objects]
+bindings = [
+  { name = "AETHER_ROOM", class_name = "AetherRoomDO" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["AetherRoomDO"]
